@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,159 +60,6 @@
 </header>
       <div class="outer">
         <section id="main">
-  
-    <article id="post-markdown笔记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/24/markdown笔记/" class="article-date">
-  <time datetime="2017-02-24T07:16:42.000Z" itemprop="datePublished">2017-02-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/24/markdown笔记/">markdown笔记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>[toc]<br><strong>目录</strong></p>
-<link rel="stylesheet" href="http://yandex.st/highlightjs/6.2/styles/googlecode.min.css">
-
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script src="http://yandex.st/highlightjs/6.2/highlight.min.js"></script>
-
-<p><script>hljs.initHighlightingOnLoad();</script></p>
-<p><script type="text/javascript"><br> $(document).ready(function(){<br>      $(“h1,h2,h3,h4,h5,h6”).each(function(i,item){<br>        var tag = $(item).get(0).localName;<br>        $(item).attr(“id”,”wow”+i);<br>        $(“#category”).append(‘<a class="new'+tag+'" href="#wow'+i+'">‘+$(this).text()+’</a></br>‘);<br>        $(“.newh1”).css(“margin-left”,0);<br>        $(“.newh2”).css(“margin-left”,20);<br>        $(“.newh3”).css(“margin-left”,40);<br>        $(“.newh4”).css(“margin-left”,60);<br>        $(“.newh5”).css(“margin-left”,80);<br>        $(“.newh6”).css(“margin-left”,100);<br>      });<br> });<br></script></p>
-<div id="category"></div>
-
-<hr>
-<p>瞄点跳转[目录]</p>
-<ul>
-<li><a href="#markdown笔记">markdown笔记</a></li>
-<li><a href="#target">字符编写</a></li>
-</ul>
-<h1 id="markdown笔记"><a href="#markdown笔记" class="headerlink" title=" markdown笔记"></a><a id="markdown"></a> markdown笔记</h1><h3 id="markdown使用环境"><a href="#markdown使用环境" class="headerlink" title="markdown使用环境"></a>markdown使用环境</h3><table>
-<thead>
-<tr>
-<th>Windows</th>
-<th>Linux</th>
-<th>Mac</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>markdownPad &amp; markpad</td>
-<td>ReText</td>
-<td>Mou</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>2</li>
-<li>3</li>
-<li>4</li>
-</ol>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">- (void)calendar:(FSCalendar *)calendar boundingRectWillChange:(CGRect)bounds animated:(BOOL)animated</div><div class="line">&#123;</div><div class="line">    DSLog(@&quot;%f&quot;,bounds.size.height);</div><div class="line">    [calendar mas_updateConstraints:^(MASConstraintMaker *make) &#123;</div><div class="line">        make.height.equalTo(@(bounds.size.height));</div><div class="line">    &#125;];</div><div class="line">    [self.view layoutIfNeeded];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><code>代码ddjldjld</code></p>
-<h1 id="字体特效"><a href="#字体特效" class="headerlink" title="字体特效"></a>字体特效</h1><p><strong>加粗</strong><br><em>斜体</em><br><del>删除线</del></p>
-<h1 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h1><ol>
-<li>ABC</li>
-<li>ABC</li>
-<li>ABC</li>
-</ol>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
-<p><strong>引用的显示效果</strong></p>
-<pre><code>return is a blockquote ljdlfjldjfldjffldjfldjddddddssssssssssssdljfjfd
-</code></pre><p>ljdlfj<br>ljdljfl<br>ljdlfj</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>第二段</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="这是一个标题。"><a href="#这是一个标题。" class="headerlink" title="这是一个标题。"></a>这是一个标题。</h2><ol>
-<li>这是第一行列表项。</li>
-<li>这是第二行列表项。</li>
-</ol>
-<p>给出一些例子代码：</p>
-<pre><code>return shell_exec(&quot;echo $input | $markdown_script&quot;);
-</code></pre></blockquote>
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
-<thead>
-<tr>
-<th>markdown</th>
-<th>笔记</th>
-<th>表格</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.1</td>
-<td>2</td>
-<td>5</td>
-</tr>
-<tr>
-<td>23</td>
-<td>我到家了</td>
-<td>dljf</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">first Header</th>
-<th style="text-align:center">second Header</th>
-<th style="text-align:right">third Header</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">left</td>
-<td style="text-align:center">center</td>
-<td style="text-align:right">right</td>
-</tr>
-</tbody>
-</table>
-<h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h1><p>hello<a href="hi">^1</a></p>
-<h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><hr>
-<hr>
-<hr>
-<h1 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h1><p><img src="http://imgsrc.baidu.com/forum/pic/item/4563f6246b600c33afb10071134c510fd8f9a1bb.jpg" alt="mou"></p>
-<h1 id="插入连接"><a href="#插入连接" class="headerlink" title="插入连接"></a>插入连接</h1><p><a href="http://www.baidu.com" target="_blank" rel="external">百度</a></p>
-<h1 id="字符编写"><a href="#字符编写" class="headerlink" title=" 字符编写"></a><a id="target"></a> 字符编写</h1><blockquote>
-<p>通过前面加 \ 编写特殊字符</p>
-</blockquote>
-<ol>
-<li>#</li>
-<li>*</li>
-<li>-</li>
-</ol>
-<h1 id="插入本地图片"><a href="#插入本地图片" class="headerlink" title="插入本地图片"></a>插入本地图片</h1><p><img src="/Users/imac/Desktop/IMG_2604_.jpg" alt=""></p>
-<p><img src="https://img.shields.io/badge/Apps%20Using-%3E%207,200-00BFFF.svg?style=plastic" alt="Asing"></p>
-<p><img src="https://img.shields.io/badge/t%20Downloads-%3E%20360,000-00BFFF.svg?style=plastic" alt="object"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/24/markdown笔记/" data-id="cizj8l29u0000l3shdpwkveo3" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
   
     <article id="post-中文" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -241,7 +88,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/23/中文/" data-id="cizj8l29z0001l3shxd30rto2" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/02/23/中文/" data-id="cizj8ypbu0002m2shffviyy74" class="article-share-link">Share</a>
       
       
     </footer>
@@ -284,7 +131,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/23/biaoti/" data-id="cizj8l2a20002l3shdoccz5r0" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/02/23/biaoti/" data-id="cizj8ypbm0000m2shqfp0y9io" class="article-share-link">Share</a>
       
       
     </footer>
@@ -329,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/23/hello-world/" data-id="cizj8l2a40003l3sh9jn3f5y3" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/02/23/hello-world/" data-id="cizj8ypbr0001m2shhcgakqpt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -364,13 +211,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2017/02/24/markdown笔记/">markdown笔记</a>
-          </li>
         
           <li>
             <a href="/2017/02/23/中文/">中文</a>
@@ -397,7 +240,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Yu Chan<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
