@@ -61,6 +61,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-配置github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/25/配置github/" class="article-date">
+  <time datetime="2017-02-25T04:33:15.000Z" itemprop="datePublished">2017-02-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/25/配置github/">搭建HEXO</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="配置GitHub"><a href="#配置GitHub" class="headerlink" title="配置GitHub"></a>配置GitHub</h2><pre><code>ssh-keygen -t rsa -C &quot;你的注册github的电子邮箱地址&quot;
+</code></pre><p>一直回车，然后在本地C盘-用户目录下面有一个.ssh文件夹，进去打开id_rsa.pub。复制内容放进GitHub上的settings里的ssh keys中。然后在git bash再输入：</p>
+<pre><code>ssh -T git@github.com
+</code></pre><p>如果如果是第一次的会提示是否continue，输入yes就会看到：You’ve successfully authenticated, but GitHub does not provide shell access 。这就表示已成功链接。</p>
+<p>链接GitHub与hexo：</p>
+<p>打开_config.yml文件在行末添加内容：</p>
+<pre><code>deploy:  
+    type: git  
+    repository: git@github.com:xpf199741/xpf199741.github.io.git   
+    branch: master
+</code></pre><p>最后git bash执行：</p>
+<pre><code>hexo g  
+hexo d
+</code></pre><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>如果出现 <code>ERROR Deployer not found: git</code>时，git bash输入</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/25/配置github/" data-id="cizkr76xp0001weshvuzujlzt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-中文" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/02/23/中文/" class="article-date">
@@ -88,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/23/中文/" data-id="cizj8ypbu0002m2shffviyy74" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/02/23/中文/" data-id="cizkr76xu0003wesh0zb928ly" class="article-share-link">Share</a>
       
       
     </footer>
@@ -131,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/23/biaoti/" data-id="cizj8ypbm0000m2shqfp0y9io" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/02/23/biaoti/" data-id="cizkr76xk0000weshki0umh56" class="article-share-link">Share</a>
       
       
     </footer>
@@ -176,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/23/hello-world/" data-id="cizj8ypbr0001m2shhcgakqpt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/02/23/hello-world/" data-id="cizkr76xs0002weshj5lm2qgv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -214,6 +265,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/02/25/配置github/">搭建HEXO</a>
+          </li>
         
           <li>
             <a href="/2017/02/23/中文/">中文</a>
